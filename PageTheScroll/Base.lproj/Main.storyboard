@@ -32,20 +32,31 @@
                                     <constraint firstAttribute="width" constant="375" id="TfE-ds-VwB"/>
                                 </constraints>
                             </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JV-On-fca">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="BHC-Ci-o2j"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="aSH-IM-ybB" secondAttribute="bottom" id="2tY-Qr-VJj"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hCY-3O-6CM" secondAttribute="bottom" id="EGA-hs-LVj"/>
                             <constraint firstItem="aSH-IM-ybB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KBA-9e-dbh"/>
+                            <constraint firstItem="9JV-On-fca" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QAm-46-onI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9JV-On-fca" secondAttribute="bottom" id="RF9-Q8-u6C"/>
                             <constraint firstItem="hCY-3O-6CM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WQN-BB-5qA"/>
                             <constraint firstItem="K0S-3I-Pjz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Wqk-hm-IYA"/>
+                            <constraint firstItem="9JV-On-fca" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a7o-c3-FRb"/>
                             <constraint firstItem="aSH-IM-ybB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fix-vQ-W8r"/>
                             <constraint firstAttribute="trailing" secondItem="aSH-IM-ybB" secondAttribute="trailing" id="qg2-dn-N2n"/>
                             <constraint firstItem="K0S-3I-Pjz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="wbq-FC-YuT"/>
                             <constraint firstAttribute="trailing" secondItem="hCY-3O-6CM" secondAttribute="trailing" id="y3T-7y-9gh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="9JV-On-fca" id="EQ2-5h-B3w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
